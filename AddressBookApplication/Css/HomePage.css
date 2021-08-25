@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+    height: 100%;
+}
+.header
+{
+    padding: 15px;
+}
+.logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.address_text,.addressBook
+{
+    font: normal normal bold 20px/25px Montserrat;
+    font-family:"Montserrat",sans-serif;
+    text-transform: uppercase;
+    color: rgb(24,24,26);
+    text-transform: uppercase;
+    line-height: 20px;
+     
+}
+.addressBook
+{
+    color: #E86B3D;
+}
+.main-Container{
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh-80px);
+    padding: 30px 0 10px;
+    box-sizing: border-box;
+    background-color: #f7f7f7f7;
+}
+.header-Content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+.person-Details{
+    font: normal normal normal 22px/29px Roboto;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    color: black;
+    margin-left: 10px;
+}
+.person-count{
+    background-color: #E86B3D;
+    color: #ffffff;
+    border-radius: 50%;
+    margin-left: 7px;
+    font-size: 16px;
+    width: 30px;
+    text-align: center;
+    display: inline-block;
+}
+.add-button{
+    font: normal normal normal 22px/29px Roboto;
+    font-family: 'Segoe UI', 'Open Sans';
+    background: #E86B3D;
+    color: #FFFFFF;
+    font-size: 17px;
+    border-radius: 5px;
+    padding:2px 13px;
+    text-decoration: none;
+    display: flex ;
+    align-items: center;
+}
+.table-main{
+    width: 85%;
+    margin: 0 auto;
+    overflow: auto;
+  }
+  .table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 5px;
+    min-width: 750px;
+  }
+  td,th{
+    text-align: left;
+    padding:5px 8px;
+  }
+  th{
+    background: black;
+    font: normal normal medium 18px/24px sans-serif;
+    font-family: 'Segoe UI', 'Open Sans';
+    line-height: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 0px solid #dddddd;
+  }
+  tr:not(:first-child){
+      background: #ffffff ;
+  }
+  td{
+    font: normal normal normal 16px/21px Roboto;
+    color: #3D3D3D;
+    opacity: 1;
+    line-height: 21px;
+  }
+  
+td img:first-child{
+    margin: 0 4px 1px 8px;
+}
+td img{
+    cursor: pointer;
+    width: 30%;
+}
