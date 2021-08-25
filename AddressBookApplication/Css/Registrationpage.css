@@ -125,7 +125,26 @@ select{
   }
   
   error {
-    margin-left: 10px;
+    margin-top: 5px;
     color: red;
-    font-size: 12px;
+    font-size: 14px;
+  }
+  @media only  screen and (max-width:700px) {
+    .form-input-contents{
+        padding: 10px 18px;
+    }
+    .address-content{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+    }
+    .button-div
+    {
+        display: flex;
+        flex-flow: column-reverse wrap;
+    } 
+    .addButton {
+        margin-right: 0px;
+        margin-bottom: 5px;
+      }
   }

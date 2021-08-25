@@ -25,11 +25,13 @@
                 <div class="form-input-contents">
                     <div class="row-content">
                         <label class = "label text" for="name">Full Name</label>
-                        <input type="text" class="input" name="name" placeholder="Enter Your Name..." required>
+                        <input type="text" class="input" id='name' name="name" placeholder="Enter Your Name..." required>
+                        <error id="errorName" for="name"></error>
                     </div>
                     <div class="row-content">
                         <label class = "label text" for="phone">Phone Number</label>
-                        <input type="text" class="input" name="phone" placeholder="Enter Your Phone Number..." required>
+                        <input type="text" class="input" id="phone" name="phone" placeholder="Enter Your Phone Number..." required>
+                        <error id="errorPhone" for="phone"></error>
                     </div>
                     <div class="row-content">
                         <label class = "label text" for="address">Address</label>
@@ -58,17 +60,18 @@
                         </div>
                         <div class="row-content">
                             <label class = "label text" for="zipcode">Zipcode</label>
-                            <input type="text" class="input" name="zipcode" placeholder="Zipcode" required>
+                            <input type="text" class="input" id='zip' name="zipcode" placeholder="Zipcode" required>
+                            <error id="errorZipcode" for="zipcode"></error>
                         </div>
                     </div>
                     <div class="button-div">
                         <button type="reset" class="button resetButton" onclick="resetForm()" >Reset</button>
-                        <button type="submit" class="button addButton" onclick="save()">
-                          Add
-                        </button>
+                        <button type="submit" class="button addButton" onclick="save()">Add</button>
                     </div>
                 </div>
             </form>
         </div>
+        <script src="../JS/Person.js"></script>
+        <script src="../JS/Registration.js"></script>
     </body>
 </html>
