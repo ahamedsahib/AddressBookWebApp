@@ -103,11 +103,11 @@ body
     border: 0px solid #dddddd;
   }
   tr:not(:first-child){
-      background: #ffffff ;
+      background: #ffffff;
+      color: black;
   }
   td{
-    font: normal normal normal 16px/21px Roboto;
-    color: #3D3D3D;
+    font: normal normal normal 18px Roboto;
     opacity: 1;
     line-height: 21px;
   }
