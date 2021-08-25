@@ -92,9 +92,40 @@ option{
     color: black;
 }
 select{
-    padding:10px;
+    padding:9px 80px 9px 10px;
     border: 1px solid #E86B3D;
     border-radius: 7px;
     font: normal normal normal 16px Roboto;
     resize: vertical;
 }
+.button-div{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 30px;
+  }
+  .button {
+    font-size: 20px;
+    color: #F8F8F8;
+    border: none;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family:"Montserrat",sans-serif;
+    background: rgb(26,26,26);
+    min-width: 140px;
+    padding: 7px 7px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .addButton:hover,.resetButton:hover {
+    background-color: #E86B3D;
+    color: #F8F8F8;
+  }
+  .addButton {
+    margin-right: 30px;
+  }
+  
+  error {
+    margin-left: 10px;
+    color: red;
+    font-size: 12px;
+  }
