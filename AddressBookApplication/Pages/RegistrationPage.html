@@ -18,11 +18,48 @@
         </header>
         <div class="form-content">
             <form>
-                <div class="form-head">Employee Payroll Form</div>
+                <div class="form-head">
+                    <div class="form-head-text">Person Address Form </div>
+                    <img src="../assets/Icons/cancel.svg" class="cancel_icon">
+                </div>
                 <div class="form-input-contents">
                     <div class="row-content">
-                        <label class = "label text" for="name">Name</label>
+                        <label class = "label text" for="name">Full Name</label>
                         <input type="text" class="input" name="name" placeholder="Enter Your Name..." required>
+                    </div>
+                    <div class="row-content">
+                        <label class = "label text" for="phone">Phone Number</label>
+                        <input type="text" class="input" name="phone" placeholder="Enter Your Phone Number..." required>
+                    </div>
+                    <div class="row-content">
+                        <label class = "label text" for="address">Address</label>
+                        <textarea name="address" id="address" class="input" style="height: 100px" placeholder="Enter Your Phone Address..." required></textarea>
+                    </div>
+                    <div class="address-content">
+                        <div class="row-content">
+                            <label class = "label text" for="city">City</label>
+                            <select name="city" id="city" required >
+                                    <option value="" disabled selected >City</option>
+                                    <option value="Chennai">Chennai</option>
+                                    <option value="Banglore">Banglore</option>
+                                    <option value="Mumbai">Mumbai</option>
+                                    <option value="Kochi">Kochi</option>
+                                </select>
+                        </div>
+                            <div class="row-content">
+                                <label class = "label text" for="State">State</label>
+                                <select name="state" id="state" required>
+                                    <option value="" disabled selected >State</option>
+                                    <option value="TamilNadu">TamilNadu</option>
+                                    <option value="Karnataka">Karnataka</option>
+                                    <option value="Maharastra">Maharastra</option>
+                                    <option value="Kerala">Kerala</option>
+                                </select>
+                            </div>
+                            <div class="row-content">
+                                <label class = "label text" for="zipcode">Zipcode</label>
+                                <input type="text" class="input" name="zipcode" placeholder="Zipcode" required>
+                            </div>
                     </div>
                 </div>
             </form>

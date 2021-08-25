@@ -44,16 +44,25 @@ form{
     border-radius: 8px;
 }
 .form-head{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    background-color: rgb(59,59,59);
+    padding: 10px 0px;
+}
+.form-head-text{
     font: normal normal bold 28px/37px Roboto;
     color: rgb(152,152,152);
     text-align: center;
-    background-color: rgb(59,59,59);
     text-transform: capitalize;
-    padding: 10px 0px;
 }
 .form-input-contents{
     padding: 10px 70px;
 }
+.cancel_icon{
+    height: 35px;
+}
+
 .row-content{
     display: flex;
     flex-direction: column;
@@ -61,16 +70,31 @@ form{
     margin-bottom: 10px;
 }
 .label{
-    min-width: 140px;
-    padding:12px 12px 12px 0;
+    padding:8px 12px 7px 0;
     font: normal normal normal 18px/24px Roboto;
     color: rgb(24,24,26);
-    font-family: Roboto;
 }
 
 .input{
     width: 100%;
-    padding:12px;
+    padding:10px;
     border:1px solid #E86B3D;
     border-radius: 5px;
+}
+.address-content{
+    display: flex;
+    justify-content:space-between;
+}
+select:invalid {
+    color: gray;
+  }
+option{
+    color: black;
+}
+select{
+    padding:10px;
+    border: 1px solid #E86B3D;
+    border-radius: 7px;
+    font: normal normal normal 16px Roboto;
+    resize: vertical;
 }
