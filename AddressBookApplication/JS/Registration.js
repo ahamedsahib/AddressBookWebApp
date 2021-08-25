@@ -80,3 +80,13 @@ const CreateOrUpdateLocal = (addressBookData) => {
     //JSON to String
     localStorage.setItem("AddressBookList", JSON.stringify(addressBookList));
   };
+  const resetForm=()=>{
+    setTextValue('#name','');
+    setTextValue('#phone','');
+    setTextValue('#zip','');
+    setTextValue('#errorName','');
+    setTextValue('#errorPhone','');
+    setTextValue('#errorZipcode','');
+    document.getElementById('city').value="";
+    document.getElementById('state').value="";
+}
