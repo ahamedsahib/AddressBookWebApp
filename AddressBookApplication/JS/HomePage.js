@@ -25,7 +25,7 @@ const CreateHeaderhtml =
             <td>${addressBook._State}</td>
             <td>${addressBook._zip}</td>
             <td>
-                <img id="${addressBook._id}" src="../assets/icons/delete-black-18dp.svg" alt="delete" id="icon">
+                <img id="${addressBook._id}" src="../assets/icons/delete-black-18dp.svg" alt="delete" id="icon" onclick="remove(this)">
                 <img id="${addressBook._id}" src="../assets/icons/create-black-18dp.svg" alt="create" id="icon" onclick="update(this)">  
             </td>
         </tr>      
@@ -33,9 +33,21 @@ const CreateHeaderhtml =
     });
 document.querySelector("#display-table").innerHTML = innerHtml;
 };
+
 const update=(node)=>{
     let addressBookData = addressBookList.find(abData=>abData._id==node.id);
     if(!addressBookData)return;
     localStorage.setItem('editAb',JSON.stringify(addressBookData));
     window.location.replace(site_properties.register_page);
   }
+
+const remove= (node) =>
+{
+  let abData=addressBookList.find(addressData => addressData._id == node.id);
+  if(!abData) return ;
+  const index= addressBookList.map(addressData => addressData._id).indexOf(abData._id);
+  addressBookList.splice(index,1);
+  localStorage.setItem("AddressBookList",JSON.stringify(addressBookList));
+  document.querySelector(".person-count").textContent=addressBookList.length;
+  createInnerHtml();
+}
